@@ -1,17 +1,11 @@
-import glob
-import json
-import base64
 from flask import Flask, render_template, request, jsonify
 from flask_cors import CORS
-from sklearn.metrics.pairwise import euclidean_distances
-import os
 import cv2
 import numpy as np
 
 from Imagen import Imagen
 from Rostro import Rostro
-from KNN import KNN
-from GIFGenerator import GIFGenerator
+from knn import KNN
 
 app = Flask(__name__)
 CORS(app) # Habilita CORS para toda la aplicación
