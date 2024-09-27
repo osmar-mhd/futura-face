@@ -1,0 +1,55 @@
+/* Header */
+header {
+  background-image: linear-gradient(to right, rgb(0, 12, 24), rgb(0, 5, 22));
+  padding: 2.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* Alineamos los elementos horizontalmente */
+  text-align: center;
+  position: fixed;
+  width: 8em;
+  height: 100vh;
+  left: 0;
+}
+
+/* Estilos para la navegación dentro del header */
+header nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+header nav a {
+  margin-bottom: 2em;
+  color: rgba(255, 255, 255, 0.802);
+  border-bottom: 0.1em solid rgb(235, 245, 10);
+  display: flex;
+  flex-direction: column; /* Cambiamos a columna para apilar icono y texto verticalmente */
+  align-items: center; /* Centramos el contenido horizontalmente */
+  justify-content: center; /* Centramos el contenido verticalmente */
+  padding: 2em 0;
+  font-size: 0.5em;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  position: relative;
+}
+
+header nav a:hover {
+  color: rgb(235, 245, 10);
+  opacity: 0.95;
+}
+
+@media screen and (max-width: 580px) {
+  header nav a {
+    margin-right: 8em; /* Reducimos el margen derecho para dejar espacio entre los elementos */
+    display: flex;
+    flex-direction: column; /* Mantenemos la dirección del flex a vertical */
+  }
+
+  header nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /* Distribuye el espacio equitativamente entre los elementos */
+  }
+}

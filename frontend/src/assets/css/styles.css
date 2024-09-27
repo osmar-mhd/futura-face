@@ -1,0 +1,103 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+section,
+article,
+footer {
+  margin-left: 8em;
+  padding: 5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  min-height: 100vh;
+}
+
+/* Botones - Input */
+
+input[type=button],
+input[type=submit],
+input[type=file],
+button {
+  background-color: rgb(10, 140, 245);
+  color: rgb(255, 255, 255);
+  margin: 1em;
+  padding: 1em;
+  text-align: center;
+  text-decoration: none;
+  font-size: 10px;
+  border: none;
+  border-radius: 5px 5px 5px 5px;
+}
+
+/* Botón */
+button:hover {
+  background-color: rgb(62, 208, 62);
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  -webkit-box-shadow: 0 10px 30px 0 rgba(95, 186, 233, 0.4);
+  box-shadow: 0 10px 30px 0 rgba(10, 237, 10, 0.4);
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+
+/* Input de tipo archivo */
+input[type="file"]:hover {
+  background-color: rgb(10, 237, 89);
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  -webkit-box-shadow: 0 10px 30px 0 rgba(95, 186, 233, 0.4);
+  box-shadow: 0 10px 30px 0 rgba(10, 237, 10, 0.4);
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+
+
+
+@media screen and (max-width: 580px) {
+
+  section,
+  article,
+  footer {
+    margin-left: 0; /* Reinicia el margen izquierdo */
+  }
+
+  body {
+    background-image: linear-gradient(to right, rgb(79, 130, 232), rgb(79, 130, 232));
+  }
+
+  header {
+    padding: 0;
+    width: 100%;
+    height: 8em;
+    z-index: 1000;
+    position: fixed;
+    bottom: 0;
+  }
+
+  main {
+    margin-bottom: 8em;
+    position: relative;
+    z-index: 1;
+  }
+}
+
+/* Efectos */
+
+.reflejo {
+  -webkit-box-reflect: below 0.1px linear-gradient(transparent, #0004);
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.sombra {
+  -webkit-box-shadow: 0 10px 30px 0 rgba(95, 186, 233, 0.4);
+  box-shadow: 0 10px 30px 0 rgba(95, 186, 233, 0.4);
+  -webkit-border-radius: 5px 5px 5px 5px;
+  border-radius: 5px 5px 5px 5px;
+}

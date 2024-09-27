@@ -1,0 +1,133 @@
+img:hover {
+    background-color: rgb(42, 36, 225);
+    color: rgb(255, 255, 255);
+    -webkit-box-shadow: 0 10px 30px 0 rgba(95, 186, 233, 0.4);
+    box-shadow: 0 10px 30px 0 rgba(42, 36, 225, 0.4);
+    -webkit-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px;
+}
+
+#upload {
+    background-image: linear-gradient(to right, rgb(3, 26, 50), rgb(3, 1, 35));
+    color: rgb(228, 224, 224);
+}
+
+#upload button {
+    margin-top: 1rem; /* Espacio superior para el botón */
+    display: block; /* Para centrar el botón */
+    margin-left: auto;
+    margin-right: auto;
+    width: 10rem; /* Ancho del botón (puedes ajustar el valor) */
+    padding: 0.5rem; /* Espaciado interno del botón */
+}
+
+#processing {
+    background-image: linear-gradient(to right, rgb(3, 26, 50), rgb(18, 15, 64));
+    color: rgb(228, 224, 224);
+}
+
+#processing .result-container {
+    display: flex;
+    flex-direction: row; /* Change to column by default for mobile */
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 2rem;
+    gap: 1rem;
+}
+
+#processing img {
+    max-width: 15rem;
+    max-height: 15rem;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+#processing table {
+    margin: 1rem auto; /* Centra la tabla y añade margen */
+    border-spacing: 0.5rem; /* Añade espacio entre las celdas de la tabla */
+    border-collapse: collapse; /* Asegura que las celdas compartan los bordes */
+    max-width: 100%; /* Asegura que la tabla no exceda el ancho del contenedor */
+}
+
+#processing th, #processing td {
+    border: 1px solid #ccc; /* Añade un borde a las celdas */
+    padding: 0.2rem; /* Espaciado interno de las celdas */
+    text-align: center; /* Centra el contenido del texto */
+    background-color: rgba(255, 255, 255, 0.1); /* Color de fondo con transparencia */
+    word-wrap: break-word; /* Permite que el texto se ajuste a celdas más estrechas */
+}
+
+#processing th {
+    background-color: rgba(255, 255, 255, 0.2); /* Color de fondo diferente para los encabezados */
+    font-weight: bold; /* Negrita para los encabezados */
+}
+
+#processing tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.05); /* Color de fondo para las filas pares */
+}
+
+#processing .form-container {
+    display: flex;
+    justify-content: center; /* Centra el formulario horizontalmente */
+    gap: 1rem; /* Añade espacio entre los elementos del formulario */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan si es necesario */
+    margin-top: 1rem; /* Espacio superior para el formulario */
+}
+
+#processing select {
+    width: 100%; /* Ajusta el ancho del select al 100% del contenedor */
+    padding: 0.2rem; /* Añade espaciado interno para que se vea mejor */
+    margin-bottom: 0.2rem; /* Añade margen inferior para espacio entre selects */
+    border: 1px solid #ccc; /* Color del borde */
+    border-radius: 5px; /* Bordes redondeados */
+    background-color: #fff; /* Color de fondo */
+    color: #333; /* Color del texto */
+    font-size: 1rem; /* Tamaño de la fuente */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra para darle un efecto de profundidad */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el select */
+}
+
+#processing select:focus{
+    border-color: #007bff; /* Color del borde al hacer foco */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Sombra al hacer foco */
+}
+
+#processing form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem; /* Espacio entre los labels */
+}
+
+#processing label {
+    display: flex;
+    flex-direction: column; /* Coloca el texto del label sobre el select */
+    flex: 1; /* Permite que los elementos ocupen el mismo espacio */
+    min-width: 200px; /* Ancho mínimo para cada label para mantener el layout */
+    margin-bottom: 1rem; /* Añade margen inferior */
+    font-weight: bold; /* Hace el texto en negrita */
+    color: #ffffff; /* Color del texto */
+}
+
+#processing button {
+    margin-top: 1rem; /* Espacio superior para el botón */
+    display: block; /* Para centrar el botón */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#results {
+    background-image: linear-gradient(to right, rgb(3, 26, 50), rgb(64, 17, 15));
+    color: rgb(228, 224, 224);
+}
+
+#results img {
+    max-width: 10rem;
+    max-height: 10rem;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 8px;
+}
