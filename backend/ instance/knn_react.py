@@ -6,9 +6,9 @@ import base64
 from sklearn.neighbors import NearestNeighbors
 from sklearn.model_selection import train_test_split
 
-from Imagen import Imagen
-from Rostro import Rostro
-from GIFGenerator import GIFGenerator
+from imagen import Imagen
+from rostro import Rostro
+from gif_generator import GIFGenerator
 
 etiqueta = "woman_30"
 etnia = "Europa"

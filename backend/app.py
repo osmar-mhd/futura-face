@@ -3,8 +3,8 @@ from flask_cors import CORS
 import cv2
 import numpy as np
 
-from Imagen import Imagen
-from Rostro import Rostro
+from imagen import Imagen
+from rostro import Rostro
 from knn import KNN
 
 app = Flask(__name__)

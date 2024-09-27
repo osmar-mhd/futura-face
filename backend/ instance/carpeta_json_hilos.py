@@ -4,8 +4,8 @@ import cv2
 import base64
 import numpy as np
 from concurrent.futures import ThreadPoolExecutor, as_completed
-from Imagen import Imagen
-from Rostro import Rostro
+from imagen import Imagen
+from rostro import Rostro
 
 # Función para procesar una imagen
 def procesar_imagen(ruta_imagen, subcarpeta, subcarpeta_interna):

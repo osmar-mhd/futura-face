@@ -3,8 +3,8 @@ import numpy as np
 from sklearn.metrics.pairwise import euclidean_distances
 from sklearn.metrics import precision_score, recall_score, f1_score
 
-from Imagen import Imagen
-from Rostro import Rostro
+from imagen import Imagen
+from rostro import Rostro
 
 path_user = '/home/mxn/Documents/2024-A022/DatasetAgeGif/Europa/woman/g2ugPGK/frame_3.png' # Path con imagen dentro en el conjunto prueba
 #path_user = '/home/mxn/Documents/2024-A022/DatasetAgeGif/Europa/woman/g2ugPGK/frame_2.png' # Path con imagen ajeno en el conjunto prueba
