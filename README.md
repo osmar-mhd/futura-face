@@ -9,4 +9,4 @@
 ![License MIT](https://img.shields.io/badge/license-MIT-blue.svg?style=plastic)
 
 ![Teaser image](./futura-face-teaser.png)
-**Picture:** *These people are not real &ndash; they were produced by our generator that allows control over different aspects of the image.*
+**Picture:** *The images illustrate how the system analyzes faces by detecting key points using dlib, with a future application utilizing the k-NN algorithm for facial recognition and comparison.*
